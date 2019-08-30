@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+  background: url(5.jpg) no-repeat center fixed;
+  background-size: fill;
+}
+
+body {
+  color: magenta;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+h2.italic {
+  font-style: italic;
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 15px 20px;
+  margin: 30px 0;
+  box-sizing: border-box;
+  border: 2px solid magenta;
+  border-radius: 4px;
+  outline: none;
+  margin-left: 500px;
+}
+
+input[type=text]:focus {
+  background-color: pink;
+}
+label{
+  margin-left: 300px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+input[type=submit] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  }
+
+input[type=submit]:hover {
+  background-color: magenta;
+}
+
+</style>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 class="italic">Login into your store!</h2>
+<br>
+<br>
+<form>
+  <!--<label for="email" >Email......</label>-->
+  <input type="text" id="storecode" name="storecode" placeholder="Your store code...">
+  <br>
+  <!--<label for="password">Password</label>-->
+  <input type="text" id="password" name="password" placeholder="Your password...">
+</form>
+<br>
+<input type="submit" onclick="location.href='pregled_artikla.html';" value="Login">
+<br>
+<input type="submit" onclick="location.href='pocetna.html';" value="Cancel">
+
+</body>
+</html>

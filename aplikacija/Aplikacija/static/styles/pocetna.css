@@ -1,0 +1,53 @@
+html {
+  background: url(images/pocet.jpg) no-repeat center fixed;
+  background-size: fill;
+}
+
+input[type=submit], input[type=button] {
+  background-color: red;
+  color: white;
+  padding: 16px 50px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 530px;
+  margin-top: 630px
+
+  }
+
+input[type=submit]:hover {
+  background-color: magenta;
+}
+
+
+input[type=button]{
+  margin-left: 600px;
+  margin-top: 630px;
+}
+
+input[type=button]:hover {
+  background-color: magenta;
+}
+
+
+input[type=store]{
+  background-color: red;
+  color: white;
+  padding: 16px 50px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  float: right;
+  margin-top: 900px;
+  text-align: center;
+  font-size: 18px;
+}
+
+input[type=store]:hover {
+  background-color: magenta;
+}
+body {
+
+}
