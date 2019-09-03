@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+  background: url(5.jpg) no-repeat center fixed;
+  background-size: fill;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: magenta;
+  font-style: italic;
+}
+#reserve {
+  font-style: italic;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#reserve td, #reserve th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#reserve tr:nth-child(even){background-color: #f2f2f2;}
+
+#reserve tr:hover {background-color: #ddd;}
+
+#reserve th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: magenta;
+  color: white;
+}
+
+
+
+</style>
+</head>
+<body>
+  <br>
+  <h1>Popis rezerviranih artikla:</h1>
+  <br>
+  <table id="reserve">
+    <tr>
+	  <th>Redni broj</th>
+      <th>Naziv artikla</th>
+      <th>Cijena</th>
+      <th>Velicina</th>
+      <th>Raspoloziost</th>
+      <th>Trgovina</th>
+	  <th>Rezervacija</th>
+    </tr>
+	{% for item in data %}
+    <tr>
+      <td>{{item[0]}}</td>
+      <td>{{item[1]}}</td>
+      <td>{{item[2]}}</td>
+      <td>{{item[3]}}</td>
+      <td>{{item[4]}}</td>
+	  <td>{{item[5]}}</td>
+	  <td>{{item[6]}}</td>
+    </tr>
+	{%endfor%}
+
+  </table>
+
+</body>
+</html>
